@@ -23,6 +23,7 @@ export default function Home() {
               src={logo}
               layout='responsive'
               priority
+              alt='Logo-La-Querida'
             />
           </div>
           <span className={styles.logo_cons}>Web en construcción</span>
@@ -45,6 +46,7 @@ export default function Home() {
                   src={whats}
                   width="25px"
                   height="25px"
+                  alt='whatsapp'
                 />
               </div>
               <span>
@@ -73,12 +75,14 @@ export default function Home() {
               layout='fill'
               objectFit='cover'
               priority
+              alt=''
             />
             <Image 
               src={field}
               layout='fill'
               objectFit='cover'
               priority
+              alt=''
             />
           </div>
           <div className={styles.bg}>
@@ -93,6 +97,7 @@ export default function Home() {
               src={flota}
               layout='responsive'
               priority
+              alt=''
             />
           </div>
       </div>

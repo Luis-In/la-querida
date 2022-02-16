@@ -31,6 +31,7 @@
   font-size: 5.5rem;
   font-weight: bolder;
   position: relative;
+  z-index: 1;
 }
 .logo_prox::after {
   content: "PROXIMAMENTE";
