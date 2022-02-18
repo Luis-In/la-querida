@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-//imgs
-import field from "../assets/field_bg.png"
-import skybox from "../assets/skybox.png"
-import logo from "../assets/logo_la_querida.png"
-import flota from "../assets/flota_lateral.png"
-import whats from "../assets/whatsapp.png"
+
+const imgix = ({ src }) => {
+  return src
+}
 
 export default function Home() {
   return (
@@ -20,10 +18,15 @@ export default function Home() {
         <div className={styles.logo}>
           <div className={styles.laquerida}>
             <Image 
-              src={logo}
+              src="/img/logo_la_querida.png"
               layout='responsive'
-              priority
+              width={350}
+              height={150}
+              priority={true}
               alt='Logo-La-Querida'
+              loading='eager'
+              loader={imgix}
+              unoptimized={true}
             />
           </div>
           <span className={styles.logo_cons}>Web en construcción</span>
@@ -43,10 +46,12 @@ export default function Home() {
               <div className={styles.con}>
                 CONTACTO
                 <Image 
-                  src={whats}
-                  width="25px"
-                  height="25px"
+                  src="/img/whatsapp.png"
+                  width={25}
+                  height={25}
                   alt='whatsapp'
+                  loader={imgix}
+                  unoptimized={true}
                 />
               </div>
               <span>
@@ -71,18 +76,24 @@ export default function Home() {
       <div className={styles.background}>
         <div className={styles.landscape}>
             <Image 
-              src={skybox}
+              src="/img/skybox.png"
               layout='fill'
               objectFit='cover'
-              priority
+              priority={true}
               alt=''
+              loading='eager'
+              loader={imgix}
+              unoptimized={true}
             />
             <Image 
-              src={field}
+              src="/img/field_bg.png"
               layout='fill'
               objectFit='cover'
-              priority
+              priority={true}
               alt=''
+              loading='eager'
+              loader={imgix}
+              unoptimized={true}
             />
           </div>
           <div className={styles.bg}>
@@ -94,10 +105,15 @@ export default function Home() {
           </div>
           <div className={styles.flota}>
             <Image 
-              src={flota}
+              src="/img/flota_lateral.png"
               layout='responsive'
-              priority
+              width={300}
+              height={100}
+              priority={true}
               alt=''
+              loading='eager'
+              loader={imgix}
+              unoptimized={true}
             />
           </div>
       </div>
