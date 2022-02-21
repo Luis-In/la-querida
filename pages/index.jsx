@@ -20,8 +20,8 @@ export default function Home() {
             <Image 
               src="/img/logo_la_querida.png"
               layout='responsive'
-              width={350}
-              height={150}
+              width={450}
+              height={172}
               priority={true}
               alt='Logo-La-Querida'
               loading='eager'
@@ -30,46 +30,62 @@ export default function Home() {
             />
           </div>
           <span className={styles.logo_cons}>Web en construcción</span>
-          <span className={styles.logo_prox}>PROXIMAMENTE</span>
-          <div className={styles.logo_form}>
-            <span className={styles.logo_light}>deja tu correo</span>
-            <div className={styles.logo_input}>
-              <input type="text" placeholder="correo o whatsapp" className={styles.logo_inputText}/>
-              <button className={styles.logo_button}>✔</button>
-            </div>
+          <div className={styles.logo_prox}>
+            <Image 
+              src="/img/proximamente.svg"
+              width={980}
+              height={90}
+              layout="responsive"
+              alt="proximamente"
+              loader={imgix}
+              unoptimized={true}
+            />
+          </div>
+          <div className={styles.whatsapp}>
+            <span className={styles.logo_light}>deja tus datos</span>
+              <a href="https://wa.me/59172781880" target="_blank" className={styles.whats_icon} rel="noreferrer">
+                <Image 
+                  src="/img/whatsapp.svg"
+                  width={110}
+                  height={110}
+                  alt='whatsapp'
+                  loader={imgix}
+                  unoptimized={true}
+                  objectFit="contain"
+                  layout='fill'
+                />
+              </a>
             <span className={styles.logo_bold}>te avisamos</span>
           </div>
         </div>
         <div className={styles.contact}>
-          <div className={styles.info}>
-            <div>
-              <div className={styles.con}>
-                CONTACTO
-                <Image 
-                  src="/img/whatsapp.png"
-                  width={25}
-                  height={25}
-                  alt='whatsapp'
-                  loader={imgix}
-                  unoptimized={true}
-                />
-              </div>
-              <span>
-                Boleteria Yacuiba <b>710 300 11 - </b>  
-              </span>
-              <span>
-                Encomiendas Yacuiba <b>710 300 12 - </b>
-              </span>
-              <span>
-                Boleteria Scz <b>710 300 13 - </b> 
-              </span>
-              <span>
-                Encomiendas Scz <b>710 300 14 - </b> 
-              </span>
-              <span>
-                Sucursal encomiendas Bimodal Santa Cruz <b>710 300 14</b> 
-              </span>
-            </div>
+          <div className={styles.con}>
+            CONTACTO
+            <Image 
+              src="/img/whatsapp.svg"
+              width={25}
+              height={25}
+              alt='whatsapp'
+              loader={imgix}
+              unoptimized={true}
+            />
+          </div>
+          <div className={styles.con_info}>
+            <span>
+              Boleteria Yacuiba <b>710 300 11 - </b>  
+            </span>
+            <span>
+              Encomiendas Yacuiba <b>710 300 12 - </b>
+            </span>
+            <span>
+              Boleteria Scz <b>710 300 13 - </b> 
+            </span>
+            <span>
+              Encomiendas Scz <b>710 300 14 - </b> 
+            </span>
+            <span>
+              Sucursal encomiendas Bimodal Santa Cruz <b>710 300 14</b> 
+            </span>
           </div>
         </div>
       </main>
@@ -107,8 +123,8 @@ export default function Home() {
             <Image 
               src="/img/flota_lateral.png"
               layout='responsive'
-              width={300}
-              height={100}
+              width={720}
+              height={209}
               priority={true}
               alt=''
               loading='eager'
