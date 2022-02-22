@@ -29,7 +29,16 @@ export default function Home() {
               unoptimized={true}
             />
           </div>
-          <span className={styles.logo_cons}>Web en construcción</span>
+          <div className={styles.web_cons}>
+            <Image 
+              src="/img/web_construccion.svg"
+              width={340}
+              height={30}
+              layout="responsive"
+              alt="Web en construcción"
+              loader={imgix}
+            />
+          </div>
           <div className={styles.logo_prox}>
             <Image 
               src="/img/proximamente.svg"
@@ -38,11 +47,19 @@ export default function Home() {
               layout="responsive"
               alt="proximamente"
               loader={imgix}
-              unoptimized={true}
             />
           </div>
           <div className={styles.whatsapp}>
-            <span className={styles.logo_light}>deja tus datos</span>
+            <div className={styles.deja_datos}>
+              <Image 
+                src="/img/dejar_datos.svg"
+                alt="deja tus datos"
+                loader={imgix}
+                layout="responsive"
+                height={22}
+                width={170}
+              />
+            </div>
               <a href="https://wa.me/59172781880" target="_blank" className={styles.whats_icon} rel="noreferrer">
                 <Image 
                   src="/img/whatsapp.svg"
@@ -50,42 +67,83 @@ export default function Home() {
                   height={110}
                   alt='whatsapp'
                   loader={imgix}
-                  unoptimized={true}
                   objectFit="contain"
                   layout='fill'
                 />
               </a>
-            <span className={styles.logo_bold}>te avisamos</span>
-          </div>
+            <div className={styles.te_avisamos}>
+              <Image 
+                src="/img/aviso.svg"
+                alt="deja tus datos"
+                loader={imgix}
+                layout="responsive"
+                height={22}
+                width={150}
+              />
+            </div>
+          </div>  
         </div>
         <div className={styles.contact}>
-          <div className={styles.con}>
-            CONTACTO
-            <Image 
-              src="/img/whatsapp.svg"
-              width={25}
-              height={25}
-              alt='whatsapp'
+          <div className={styles.con_whats}>
+            <Image
+              src="/img/contacto.svg"
+              width={170}
+              height={32}
+              alt='contacto whatsapp'
               loader={imgix}
-              unoptimized={true}
             />
           </div>
           <div className={styles.con_info}>
-            <span>
-              Boleteria Yacuiba <b>710 300 11 - </b>  
-            </span>
-            <span>
-              Encomiendas Yacuiba <b>710 300 12 - </b>
-            </span>
-            <span>
-              Boleteria Scz <b>710 300 13 - </b> 
-            </span>
-            <span>
-              Encomiendas Scz <b>710 300 14 - </b> 
-            </span>
-            <span>
-              Sucursal encomiendas Bimodal Santa Cruz <b>710 300 14</b> 
-            </span>
+            <div className={styles.con_info_num}>
+              <Image
+                src="/img/tel1.svg"
+                width={290}
+                height={20}
+                layout="responsive"
+                alt='contacto whatsapp'
+                loader={imgix}
+              />
+            </div>
+            <div className={styles.con_info_num}>
+              <Image
+                src="/img/tel2.svg"
+                width={290}
+                height={20}
+                layout="responsive"
+                alt='contacto whatsapp'
+                loader={imgix}
+              />
+            </div>
+            <div className={styles.con_info_num}>
+              <Image
+                src="/img/tel3.svg"
+                width={290}
+                height={20}
+                layout="responsive"
+                alt='contacto whatsapp'
+                loader={imgix}
+              />
+            </div>
+            <div className={styles.con_info_num}>
+              <Image
+                src="/img/tel4.svg"
+                width={290}
+                height={20}
+                layout="responsive"
+                alt='contacto whatsapp'
+                loader={imgix}
+              />
+            </div>
+            <div className={styles.con_info_num2}>
+              <Image
+                src="/img/tel5.svg"
+                width={290}
+                height={20}
+                layout="responsive"
+                alt='contacto whatsapp'
+                loader={imgix}
+              />
+            </div>
           </div>
         </div>
       </main>
