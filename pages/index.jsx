@@ -60,7 +60,7 @@ export default function Home() {
                 width={170}
               />
             </div>
-              <a href="https://wa.me/59172781880" target="_blank" className={styles.whats_icon} rel="noreferrer">
+              <a href="https://wa.me/59172781880?text=Por%20favor%20avísame%20cuando%20la%20página%20esté%20disponible!" target="_blank" className={styles.whats_icon} rel="noreferrer">
                 <Image 
                   src="/img/whatsapp.svg"
                   width={110}

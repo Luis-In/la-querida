@@ -265,7 +265,7 @@
 
 @media (max-width: 575.98px) {
   .logo {
-    margin: 1rem 0;
+    margin-top: 25%;
   }
   .laquerida {
     width: 60%;
@@ -288,23 +288,24 @@
   /*  */
   .contact {
     align-items: center;
-    gap: 5vh;
+    gap: 2vh;
   }
     .con_whats {
-      width: 100%;
+      width: 40%;
       justify-content: center;
+      margin: auto;
     }
     .con_info {
       flex-direction: column;
       width: 100%;
       padding: 1%;
-      gap: 2.5vh;
+      gap: 2vh;
     }
       .con_info_num2 {
         width: 100%;
       }
       .con_info_num {
-        width: 70%;
+        width: 50%;
       }
   /* */
   .landscape {
@@ -314,7 +315,7 @@
     height: 40%;
   }
   .flota {
-    bottom: 37%;
+    bottom: 26%;
     width: 95%;
   }
 }
